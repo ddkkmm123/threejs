@@ -8,7 +8,7 @@ const camera = new THREE.PerspectiveCamera(
     0.1,
     1000
 );
-camera.position.z = 13;
+camera.position.z = 25;
 
 const scene = new THREE.Scene();
 
@@ -16,7 +16,7 @@ let bee, mixer, activeAction;
 let animations = [];
 
 const loader = new GLTFLoader();
-loader.load('san.glb',
+loader.load('monkey.glb',
     function (gltf) {
         bee = gltf.scene;
         scene.add(bee);
@@ -77,19 +77,19 @@ let arrPositionModel = [
         id: 'banner',
         position: { x: 0, y: -1, z: 0 },
         rotation: { x: 0, y: 1.5, z: 0 },
-        animationClip: '_bee_hover_skeletal.1'
+        animationClip: 'head_rotation'
     },
     {
         id: "intro",
         position: { x: 1, y: -1, z: -5 },
         rotation: { x: 0.5, y: -0.5, z: 0 },
-        animationClip: '1'
+        animationClip: 'Bheebalsam'
     },
     {
         id: "description",
         position: { x: -1, y: -1, z: -20 },
         rotation: { x: 0, y: 0.5, z: 0 },
-        animationClip: '_bee_take_off_and_land_skeletal.1'
+        animationClip: 'head_rotation'
     },
     {
         id: "contact",
