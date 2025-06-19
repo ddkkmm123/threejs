@@ -83,7 +83,7 @@ let arrPositionModel = [
         id: "intro",
         position: { x: 1, y: -1, z: -5 },
         rotation: { x: 0.5, y: -0.5, z: 0 },
-        animationClip: '_bee_idle_skeletal.1'
+        animationClip: '1'
     },
     {
         id: "description",
